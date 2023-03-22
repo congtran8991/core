@@ -16,14 +16,14 @@ const ComponentA = () => {
   console.log("dataFetchApi", dataFetchApi);
 
   useEffect(() => {
-    const abcd = async () => {
+    const abcde = async () => {
       const dataParam = {
         overrideDomain: "https://jsonplaceholder.typicode.com/users",
       };
       const dataApi = await AXIOS(dataParam);
       console.log("dataApi:", dataApi);
     };
-    abcd();
+    abcde();
   }, []);
 
   return (
