@@ -17,6 +17,7 @@ const ComponentA = () => {
 
   useEffect(() => {
     const abcde123 = async () => {
+      console.log("egeg")
       const dataParam = {
         overrideDomain: "https://jsonplaceholder.typicode.com/users",
       };
