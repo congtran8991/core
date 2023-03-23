@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import RenderBreadcrumb from "./RenderBreadcrumb";
 import { useSelector, useDispatch } from "react-redux";
-import { AXIOS } from "../Commons/Helpers/axios.helper";
+import { AXIOS } from "../Utils/axios";
 import {
   decrement,
   increment,

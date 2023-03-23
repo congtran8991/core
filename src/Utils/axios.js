@@ -1,5 +1,5 @@
 import axios from "axios";
-import appConfig from "../Constants/config.const";
+import appConfig from "../Constants/config";
 export const AXIOS = function (param) {
   const { path = "/", method = "GET", data = {}, overrideDomain } = param;
   let url = (overrideDomain || appConfig.api_domain) + path;

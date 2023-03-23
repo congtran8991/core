@@ -1,5 +1,5 @@
 import React from "react";
-import { listKeyBreadcrumbs } from "../../Utils"
+import { listKeyBreadcrumbs } from "../../Utils/client"
 const newListKey = listKeyBreadcrumbs()
 const RenderBreadcrumb = () => {
     console.log("listKeyBreadcrumbs", newListKey)
