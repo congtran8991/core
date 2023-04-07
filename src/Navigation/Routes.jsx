@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
+import Test from "../Component/Test";
 const timeout = (ms) => {
   const promise = new Promise((resolve) => {
     setTimeout(resolve, ms);
@@ -7,12 +8,12 @@ const timeout = (ms) => {
   return promise;
 };
 
-const ComponentA = lazy(async() => {
-  await timeout(2000)
-  return import("../Component/ComponentA")
-})
-const ComponentB = lazy(() => import("../Component/ComponentB"))
-const ComponentC = lazy(() => import("../Component/ComponentC"))
+const ComponentA = lazy(async () => {
+  await timeout(2000);
+  return import("../Component/ComponentA");
+});
+const ComponentB = lazy(() => import("../Component/ComponentB"));
+const ComponentC = lazy(() => import("../Component/ComponentC"));
 
 const routes = [
   {
@@ -23,7 +24,7 @@ const routes = [
   {
     path: "/A",
     exact: false,
-    element: <ComponentA />,
+    element: <Test />,
   },
   {
     path: "/A/:id",
@@ -44,4 +45,4 @@ const routes = [
   },
 ];
 
-export const routers = createBrowserRouter(routes)
+export const routers = createBrowserRouter(routes);

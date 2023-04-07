@@ -2,21 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 :root {
   --primary-blue: rgb(0, 0, 255);
@@ -59,5 +57,179 @@ code {
   margin: 0;
 }
 
+.circle1 {
+  position: absolute;
+  left: calc(50% - 180px);
+  top: 150px;
+}
 
+.circle2 {
+  position: absolute;
+  left: calc(50% - 170px);
+  top: 160px;
+}
 
+.circle3 {
+  position: absolute;
+  left: calc(50% - 160px);
+  top: 170px;
+}
+
+.circle1-border {
+  border: 1px solid gray;
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+}
+
+.circle2-border {
+  border: 1px solid gray;
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+}
+
+.circle3-border {
+  border: 1px solid gray;
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+}
+
+.circle-img1 {
+  left: calc(50% - 60px);
+  position: absolute;
+  top: 100px;
+}
+
+.circle-img2 {
+  left: calc(50% - 200px);
+  position: absolute;
+  top: 60%;
+}
+
+.circle-img3 {
+  right: calc(50% - 200px);
+  position: absolute;
+  top: 60%;
+}
+
+.product-title-top {
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #db1d4b;
+}
+
+.product-security {
+  border: 3px solid #db1d4b;
+  border-left: 0px;
+  border-radius: 0px 30px 30px 0px;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.title-security {
+  font-size: 36px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 150px;
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  color: #db1d4b;
+}
+
+.information-security {
+  background: linear-gradient(90deg, #ffedf2 8.57%, rgba(255, 237, 242, 0) 90%);
+}
+.healthy {
+  background: linear-gradient(90deg, #f4fbff 8.57%, rgba(245, 252, 255, 0) 90%);
+}
+.steady {
+  background: linear-gradient(90deg, #f1faff 8.57%, rgba(242, 251, 255, 0) 90%);
+}
+
+.title-description {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.item-description {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.border-bottom-title {
+  background: #d31145;
+  height: 2px;
+  width: 200px;
+  right: 30px;
+  top: 150px;
+  position: absolute;
+}
+
+.description {
+  width: 50%;
+}
+
+.btn {
+  background: #d31145;
+  border-radius: 5px;
+  padding: 3px 7px;
+  color: #ffffff;
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.custom-input {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.title-information {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #ffffff;
+}
+
+.title-input {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+input {
+  text-indent: 10px;
+}
+
+.content-footer{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+}
+
+.btn-submit{
+  font-family: 'SVN-Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+}

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.slide-header {
+  /* height: 500px;
+  width: 100%;
+  background: gray;
+  position: relative; */
+}
