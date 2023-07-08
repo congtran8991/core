@@ -7,7 +7,7 @@ export const themeSlice = createSlice({
   },
   reducers: {
     updateTheme: (state, action) => { // action là data truyền vào từ payload
-        console.log(state, action)
+        // console.log(state, action)
       state.value = action.payload
     }
   },
@@ -17,7 +17,7 @@ export const { updateTheme } = themeSlice.actions
 
 
 export const themeValue = (state) => {
-    console.log(state)
+    // console.log(state)
     return state.theme.value
 }
 

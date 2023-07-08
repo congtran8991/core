@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { combineReducers } from 'redux'
-import counterReducer from "../reducer/countSlice"
-import fetchApiReducer from "../reducer/callApiSlice"
-import themeReducer from "../reducer/themeSlice"
+import counterReducer from "Redux/reducer/countSlice"
+import fetchApiReducer from "Redux/reducer/callApiSlice"
+import themeReducer from "Redux/reducer/themeSlice"
 import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
 import thunk from "redux-thunk";
